@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BasicTerminalShellExample {
+public class BasicTerminalShellExample extends BaseFlatLaf {
 
     private static @NotNull JediTermWidget createTerminalWidget() {
         JediTermWidget widget = new JediTermWidget(80, 24, new DefaultSettingsProvider());
@@ -43,6 +43,8 @@ public class BasicTerminalShellExample {
     }
 
     private static void createAndShowGUI() {
+        initFlatLaf();
+
         JFrame frame = new JFrame("Basic Terminal Shell Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(createTerminalWidget());

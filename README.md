@@ -14,7 +14,8 @@
 #### 计划
 - [ ] 支持配色方案
 - [ ] 修复中文乱码问题
+- [x] 去除滚动条的重绘，避免覆盖 `FlatLaf` 主题样式
 
 
 #### 截图
-![BasicTerminalShellExample](doc/images/BasicTerminalShellExample.png)
+![BasicTerminalShellExample](doc/images/BasicTerminalShellExampleFixed.png)
